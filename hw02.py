@@ -1,18 +1,34 @@
 # Task 1.1:
 #  Complete the function "read_two_ints" below:
 def read_two_ints():
+    """Read two numbers from the user and returns them as integers."""
+    
+    x_string = input("give me x: ")
+    x = int(x_string)
+    
+    y_string = input("give me y: ")
+    y = int(y_string)
+    return x,y
     # ADD a Docstring for this function
     # the return shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
-    return 1, 2
-
+    x,y = read_two_ints()
 # Task 2.1:
 #  Complete the function "compute_multadd" below:
 def compute_multadd(a, b):
+    """Computes and prints product and sum of 2 numbers"""
+    mult_res = a * b
+    add_res = a + b
+    print("mult result: ", mult_res)
+    print("add result: ", add_res)
+    return mult_res/add_res
+    x,y = compute_multadd(a, b)
+
+   
     # ADD a Docstring for this function
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
-    pass
+   
 
 # Task 3.1:
 #  Complete the function "print_fancy" below:
